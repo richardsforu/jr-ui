@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="alert alert-info text-center mt-3">
+    <h1>Welcome to Angular</h1>  
+    <hr/>
+   <h1>{{title}}</h1>
+   <hr/>
+   <h1>{{name}}</h1>
+   <hr/>
+   <h1>{{cities}}</h1>
+  </div>
+
+  <hr/>
+
+  <button (click)=changeStatus()>Show/Hide</button>
+  <div [hidden]=status>
+    <h1>My Data</h1>
+  </div>
+
+  <hr/>
+  <h1>Status: {{status}}</h1>
+
+  <hr/>
+
+  <input type="text" name="pname" [(ngModel)]=pname/>
+
+  <hr/>
+  <h1>{{pname}}</h1>
+
+  <hr/>
+
+  <img [src]=imagePath>
+
+  <hr/>
+
+  <div>
+  <p>Test</p>
+  </div>
+  
+</div>

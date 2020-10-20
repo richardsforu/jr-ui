@@ -1,0 +1,30 @@
+Steps 
+-----
+
+-> package.json -> installing dependencies of angular
+-> angular.json -> configuring angular project
+-> main.ts -> loads main modle (AppModule)
+-> src/app/app.module.ts ->
+    - declarations
+    - imports
+    - providers
+    - bootstrap
+-> src/app/app.component.ts -> AppComponent
+
+    -> selector -> app-root > same is defined in index.html
+    -> templateUrl -> src/app/app.component.html
+    -> styleUrls
+
+------------------------------
+
+Angular bindings
+-------------------
+
+1. String interpolation
+     {{}}
+2. property bindings
+     []
+3. event binding
+     ()
+4. two way binding
+  [(ngModel)]
