@@ -1,16 +1,18 @@
 <div class="container">
   <div class="card">
-    <div class="card-header">Counter APP</div>
+    <div class="card-header">Counter APP:: Total: <span class="badge badge-warning">{{total}}</span></div>
     <div class="card-body text-center">
      
     </div>
-<span *ngFor="let btn of buttons">
-  <app-counter  btnLbl={{btn}}></app-counter>
+<div class="row">
+
+ 
+
+<span class="col-4" *ngFor="let btn of buttons">
+  <app-counter (totalCount)="totalCount($event)"  btnLbl={{btn}}></app-counter>
 </span>
-    <div class="card-footer text-center">
-      <h2>Total Count: </h2>
-    </div>
+  
   </div>
 
-
+</div>
 </div>

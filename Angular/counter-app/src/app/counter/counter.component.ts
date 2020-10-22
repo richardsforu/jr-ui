@@ -13,9 +13,14 @@ export class CounterComponent implements OnInit {
 
   count=0;
 
+  @Output()
+  totalCount=new EventEmitter();
+
   btnCount(){
     this.count+=1;
+    this.totalCount.emit(Number.parseInt(this.btnLbl));
   }
+  
 
   constructor() { }
 

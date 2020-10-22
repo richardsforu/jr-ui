@@ -1,0 +1,53 @@
+<div class="container">
+
+  <h1>Reactive Forms Demo</h1> <hr/>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">Product Form</div>
+    <div class="card-body">
+    <form [formGroup]="productForm" autocomplete="off" (ngSubmit)="handleSubmit()">
+      <div class="form-group">
+        <input class="form-control" name="id" placeholder="id" formControlName="id"/>
+      </div>
+  
+      <div class="form-group">
+        <input class="form-control" name="name" placeholder="name" formControlName="name"/>
+      </div>
+  
+      <div class="form-group">
+        <input class="form-control" name="price" placeholder="price" formControlName="price"/>
+      </div>
+  
+      <div class="form-group">
+        <textarea class="form-control" name="description" placeholder="description" formControlName="description">
+        </textarea>
+      </div>
+  
+      <div class="form-group text-center">
+        <button class="btn btn-primary btn-space">Save</button>
+        <button class="btn btn-warning btn-space">Reset</button>
+        <button class="btn btn-danger btn-space">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+    
+  </div>
+  
+    <table class="table table-bordered">
+     <tbody>
+   
+    <tr *ngFor="let product of products">
+     
+         <td>{{product.id}}</td>
+         <td>{{product.name}}</td>
+         <td>{{product.price}}</td>
+         <td>{{product.description}}</td>
+      </tr>
+   </tbody>
+     </table>
+
+</div>

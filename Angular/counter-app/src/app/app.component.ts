@@ -9,11 +9,12 @@ export class AppComponent {
   title = 'counter-app';
   buttons=[10,20,-10,-20,-30];
 
-  btnCount:number=0;
+  total:number=0;
 
-  countButtons(){
-    this.btnCount+=1;
-    console.log(this.btnCount);
+  totalCount(btnLbl){
+   
+    console.log(btnLbl);
+    this.total=this.total+btnLbl;
     
   }
 
